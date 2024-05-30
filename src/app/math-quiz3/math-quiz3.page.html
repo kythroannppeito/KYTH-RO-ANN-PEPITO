@@ -1,0 +1,120 @@
+<ion-header><p>Time remaining:{{ timer}}s</p><br><p>Lives left: {{lives}}</p></ion-header>
+<ion-content>
+
+<ion-content>
+  <!-- Question 1 -->
+  <ion-card *ngIf="currentQuestion === 1" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 1</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is 45 ÷ 5?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 1 -->
+  <ion-list *ngIf="currentQuestion === 1" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('4', 1)" class="answer-button">
+      <ion-label>4</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('5', 1)" class="answer-button">
+      <ion-label>5</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('7', 1)" class="answer-button">
+      <ion-label>7</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 2 -->
+  <ion-card *ngIf="currentQuestion === 2" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 2</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is 72 ÷ 8?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 2 -->
+  <ion-list *ngIf="currentQuestion === 2" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('9', 2)" class="answer-button">
+      <ion-label>9</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('7', 2)" class="answer-button">
+      <ion-label>7</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('8', 2)" class="answer-button">
+      <ion-label>8</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 3 -->
+  <ion-card *ngIf="currentQuestion === 3" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 3</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is 56 ÷ 7?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 3 -->
+  <ion-list *ngIf="currentQuestion === 3" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('7', 3)" class="answer-button">
+      <ion-label>7</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('8', 3)" class="answer-button">
+      <ion-label>8</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('9', 3)" class="answer-button">
+      <ion-label>9</ion-label>
+    </ion-button>
+  </ion-list>
+
+   <!-- Question 4 -->
+   <ion-card *ngIf="currentQuestion === 4" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 4</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is 81 ÷ 9?</p>
+    </ion-card-content>
+  </ion-card>
+
+   <!-- Answer Options for Question 4 -->
+   <ion-list *ngIf="currentQuestion === 4" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('7', 4)" class="answer-button">
+      <ion-label>7</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('8', 4)" class="answer-button">
+      <ion-label>8</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('9', 4)" class="answer-button">
+      <ion-label>9</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 5 -->
+  <ion-card *ngIf="currentQuestion === 5" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 5</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is 0 - 5?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 5 -->
+  <ion-list *ngIf="currentQuestion === 5" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('5', 5)" class="answer-button">
+      <ion-label>5</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('0', 5)" class="answer-button">
+      <ion-label>0</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('1', 5)" class="answer-button">
+      <ion-label>1</ion-label>
+    </ion-button>
+  </ion-list>
+</ion-content>
+
