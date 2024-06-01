@@ -1,11 +1,11 @@
 export const environment = {
   production: true,
   firebaseConfig: {
-    apiKey: "AIzaSyC-Vmw8qLFPOLDem-wPHwkAZOjBy56aQgI",
-    authDomain: "quizzle-f6fa2.firebaseapp.com",
-    projectId: "quizzle-f6fa2",
-    storageBucket: "quizzle-f6fa2.appspot.com",
-    messagingSenderId: "194771581003",
-    appId: "1:194771581003:web:0c10944fb8809658eaf5ce"
+    apiKey: "AIzaSyAdGiP5MflFOTvW9tB0MuwBLXArvag9Myk",
+    authDomain: "projectquizzle.firebaseapp.com",
+    projectId: "projectquizzle",
+    storageBucket: "projectquizzle.appspot.com",
+    messagingSenderId: "138897474466",
+    appId: "1:138897474466:web:83523f4be9fb318eb628fb"
   }
 };
